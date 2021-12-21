@@ -24,7 +24,7 @@ if ( $_GET['ask'] === 'all' ) {
 }
 elseif ( $_GET['ask'] === 'id' ) {
     $id = $_GET['id'];
-    $query = "select * FROM avds.person where id=$id";  // avds.user
+    $query = "select * FROM avds.person where id=$id";
     $result = mysqli_query($link, $query);
     if ( $result === FALSE ) {
         $ans = [ 'error' => 'нет такой таблицы' ] ;
