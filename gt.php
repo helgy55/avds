@@ -1,6 +1,6 @@
 <?php
 $ask = $_GET['ask'];
-$link = @mysqli_connect('localhost', 'root', 'root', 'avds', '3306'); // @ per
+$link = @mysqli_connect('localhost', 'root', 'root', 'avds', '3306');
 if ( !$link ){
 	$ans = [ 'error' => 'нет доступа к БД' ] ;
 	$jsonans = json_encode($ans);
